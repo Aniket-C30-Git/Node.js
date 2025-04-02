@@ -1,0 +1,286 @@
+/* body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .calculator-container {
+    width: 350px;
+    background:transparent;
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  
+  h1 {
+    color: black;
+    font-size:40px;
+  }
+  
+  .display {
+    width: 90%;
+    height: 50px;
+    background: #333;
+    color: white;
+    text-align: right;
+    padding: 15px;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+  }
+  
+  .button-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+  }
+  
+  button {
+    width: 100%;
+    height: 60px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 60%;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  .number {
+    background: #444;
+    color: white;
+  }
+  
+  .number:hover {
+    background: #555;
+  }
+  
+  .operator {
+    background: #f39c12;
+    color: white;
+  }
+  
+  .operator:hover {
+    background: #e67e22;
+  }
+  
+  .clear, .equals {
+    background: #d35400;
+    color: white;
+  }
+  
+  .clear:hover, .equals:hover {
+    background: #c0392b;
+  }
+  
+  .history {
+    margin-top: 15px;
+    background: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    max-height: 150px;
+    overflow-y: auto;
+  }
+  /* --------------- */
+  /* .history-btn {
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 130px; */
+  /* } */
+  /* ------------- */
+  
+  /* .history-btn button {
+    background: #444;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: 0.2s;
+  }
+  
+  .history-btn button:hover {
+    background: #555;
+  }
+  
+  .history {
+    margin-top: 15px;
+    background: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    max-height: 150px;
+    overflow-y: auto;
+  }
+  
+  .history-item {
+    font-size: 1rem;
+    padding: 5px;
+    border-bottom: 1px solid #444;
+  }
+  .clear-history {
+    margin-top: 10px;
+    background: #c0392b;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .clear-history:hover {
+    background: #a93226; */
+  /* } */
+/* Calculator.css */
+
+/* Overall Container */
+body {
+  font-family: sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.calculator-container {
+  width: 300px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #2c3e50;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Title */
+.calculator-container h1 {
+  color: #ecf0f1;
+  margin-bottom: 15px;
+}
+
+/* Display Screen */
+.display-number {
+  width: 100%;
+  height: 50px;
+  font-size: 1.5rem;
+  text-align: right;
+  padding: 5px;
+  border: none;
+  outline: none;
+  color: black;
+  border-radius: 5px;
+  background-color: #ecf0f1;
+  margin-bottom: 15px;
+}
+
+/* Button Container */
+.button-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+/* Buttons */
+button {
+  width: 100%;
+  height: 50px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Number Buttons */
+.number {
+  background-color: #34495e;
+  color: #ecf0f1;
+}
+
+.number:hover {
+  background-color: #2c3e50;
+}
+
+/* Operator Buttons */
+.operator {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.operator:hover {
+  background-color: #c0392b;
+}
+
+/* Equals Button */
+.equals {
+  background-color: #27ae60;
+  color: white;
+}
+
+.equals:hover {
+  background-color: #219150;
+}
+
+/* Clear Button */
+.clear {
+  background-color: #f39c12;
+  color: white;
+}
+
+.clear:hover {
+  background-color: #e67e22;
+}
+
+/* History and Delete Buttons */
+.history-btn {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.history-btn button {
+  background-color: #2980b9;
+  color: white;
+}
+
+.history-btn button:hover {
+  background-color: #21618c;
+}
+
+/* History Container */
+.history-item {
+  background-color: #bdc3c7;
+  color: black;
+  padding: 5px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+/* Clear History Button */
+.clear-history {
+  background-color: #e74c3c;
+  color: white;
+  margin-top: 10px;
+}
+
+.clear-history:hover {
+  background-color: #c0392b;
+}
